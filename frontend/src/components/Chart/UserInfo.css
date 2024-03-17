@@ -1,0 +1,29 @@
+.chart {
+    margin-top: 40px;
+    background-color: rgba(59, 59, 59, 0.367);
+    height: 100px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 5px;
+    text-align: center;
+    height: fit-content;
+}
+
+.separator {
+    height: 40px;
+}
+
+h3, h5 {
+    color: white;
+}
+
+.chartObject {
+    color: black;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+ 

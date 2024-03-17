@@ -1,0 +1,84 @@
+.container {
+  padding: 100px;
+  padding-top: 40px;
+  height: 100%;
+  color: white;
+}
+
+.private {
+  margin-top: 20px;
+  font-size: 16pt;
+  background-color: rgba(88, 0, 212, 0.542);
+  border: none;
+  color: white;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.private:hover {
+  background-color: rgba(125, 62, 213, 0.542);
+}
+
+.disclaimer {
+  padding-top: 20px;
+  color: gray;
+}
+
+.active {
+  background-color: rgba(180, 0, 212, 0.542);
+  text-decoration: underline;
+}
+
+.banner {
+  font-size: 64pt !important;
+}
+
+.description {
+  font-size: 28pt;
+  max-width: 70%;
+  min-width: 300px;
+  color: rgb(212, 212, 212);
+  font-weight: bold;
+}
+
+.inputBox {
+  padding: 10px;
+  width: 400px;
+  border-radius: 16px;
+  font-size: 16pt;
+  background-color: rgba(199, 199, 199, 0.367);
+  border: none;
+  color: white;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.inputBox::placeholder {
+  color: rgba(255, 255, 255, 0.273);
+}
+
+.goButton {
+  margin-top: 20px;
+  font-size: 16pt;
+  background-color: rgba(0, 11, 212, 0.542);
+  border: none;
+  color: white;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.goButton:hover {
+  background-color: rgba(0, 11, 212);
+}
+
+.attribution a {
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  padding: 0 5px 5px 0;
+  text-decoration: none;
+}

@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: ./frontend
+    restart: always
+    ports:
+      - '8081:3000'
+  server:
+    build: ./backend
+    restart: always
+    ports:
+      - '3010:3010'
+    depends_on:
+      - redis
+    environment:
+      REDIS_URL: redis://redis:6379
+      REDIS_PASSWORD: eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81x
+  redis:
+    image: redis:latest
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    ports:
+      - 6379:6379
+    volumes:
+      - .db:/data
+    restart: always
+    entrypoint: redis-server --appendonly yes
